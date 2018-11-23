@@ -21,7 +21,7 @@
 #include "mp3_decoder.h"
 
 /* HACK: make PIO include the esp_http_client library */
-#include "esp_http_client.h"
+#include <esp_http_client.h>
 
 static const char *TAG = "PLAY_MP3_FLASH";
 /*

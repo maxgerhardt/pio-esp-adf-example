@@ -11,6 +11,6 @@ Look into the `platformio.ini` to understand how building works and what you hav
 ## License 
 
 All of the ESP-ADF code is a momentary snapshot of the repo (https://github.com/espressif/esp-adf/) on the
-02.10.2018.
+23.11.2018.
 
 All ESP-ADF code is property of Espressif.

@@ -48,7 +48,7 @@ extern "C" {
 #define GPIO_PA_EN                  GPIO_NUM_21
 #define GPIO_SEL_PA_EN              GPIO_SEL_21
 
-/* Press button related */
+/* Press button related */ 
 #define GPIO_SEL_REC                GPIO_SEL_36    //SENSOR_VP
 #define GPIO_SEL_MODE               GPIO_SEL_39    //SENSOR_VN
 #define GPIO_REC                    GPIO_NUM_36
