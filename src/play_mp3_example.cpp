@@ -30,10 +30,8 @@ static const char *TAG = "PLAY_MP3_FLASH";
 extern const uint8_t adf_music_mp3_start[] asm("_binary_adf_music_mp3_start");
 extern const uint8_t adf_music_mp3_end[]   asm("_binary_adf_music_mp3_end");
 
-//typedef audio_element_err_t (*stream_func)(audio_element_handle_t self, char *buffer, int len, TickType_t ticks_to_wait, void *context);
+void led_test();
 
-//have int (*)(audio_element*, char*, int, unsigned int, void*)}
-//want audio_element_err_t (*)(audio_element*, char*, int, unsigned int, void*)}
 audio_element_err_t mp3_music_read_cb(audio_element_handle_t el, char *buf, int len, TickType_t wait_time, void *ctx)
 {
     static int mp3_pos;
@@ -54,6 +52,9 @@ extern "C" void app_main(void)
     audio_element_handle_t i2s_stream_writer, mp3_decoder;
     esp_log_level_set("*", ESP_LOG_WARN);
     esp_log_level_set(TAG, ESP_LOG_INFO);
+
+    led_test();
+
     ESP_LOGI(TAG, "[ 1 ] Start audio codec chip");
     audio_board_handle_t board_handle = audio_board_init();
     audio_hal_ctrl_codec(board_handle->audio_hal, AUDIO_HAL_CODEC_MODE_BOTH, AUDIO_HAL_CTRL_START);
@@ -165,4 +166,48 @@ extern "C" void app_main(void)
     audio_pipeline_deinit(pipeline);
     audio_element_deinit(i2s_stream_writer);
     audio_element_deinit(mp3_decoder);
+}
+
+extern "C" {
+#include <IS31FL3216.h>
+}
+
+void led_test() {
+	is31fl3216_handle_t drvHandle = is31fl3216_init();
+
+	//repeat 5 times
+	for(int j=0; j < 5; j++) {
+		for(int i=1; i <= 16; i++) {
+			if ( i % 2 == 0){ //light up all even leds
+				is31fl3216_ch_enable(drvHandle, (is31_pwm_channel_t) (1 << i));
+				is31fl3216_ch_duty_set(drvHandle, (is31_pwm_channel_t) (1 << i), 255);
+			} else {
+				is31fl3216_ch_disable(drvHandle, (is31_pwm_channel_t) (1 << i));
+				is31fl3216_ch_duty_set(drvHandle, (is31_pwm_channel_t) (1 << i), 0);
+			}
+		}
+
+		vTaskDelay(2000 / portTICK_PERIOD_MS );
+
+		for(int i=1; i <= 16; i++) {
+			if ( i % 2 == 1){ //light up all uneven
+				is31fl3216_ch_enable(drvHandle, (is31_pwm_channel_t) (1 << i));
+				is31fl3216_ch_duty_set(drvHandle, (is31_pwm_channel_t) (1 << i), 255);
+			} else {
+				is31fl3216_ch_disable(drvHandle, (is31_pwm_channel_t) (1 << i));
+				is31fl3216_ch_duty_set(drvHandle, (is31_pwm_channel_t) (1 << i), 0);
+			}
+		}
+
+		vTaskDelay(2000 / portTICK_PERIOD_MS );
+	}
+
+	// turn on LED channel 1
+	//is31fl3216_ch_enable(drvHandle, IS31FL3216_CH_1);
+	//is31fl3216_ch_duty_set(drvHandle, IS31FL3216_CH_1, 255);
+
+	//vTaskDelay(2000 / portTICK_PERIOD_MS );
+
+	//destroy driver
+	//is31fl3216_deinit(drvHandle);
 }
