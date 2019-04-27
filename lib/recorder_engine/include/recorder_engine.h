@@ -28,7 +28,7 @@
 #define REC_ONE_BLOCK_SIZE 2880     // 90ms[16k,16bit,1channel]
 
 #define DEFAULT_REC_ENGINE_CONFIG() {\
-    .one_frame_time_ms          = 10,\
+    .one_frame_duration_ms      = 10,\
     .sensitivity                = 0,\
     .vad_off_delay_ms           = 600,\
     .wakeup_time_ms             = 10000,\
@@ -155,17 +155,17 @@ typedef enum {
  * @brief recorder configuration parameters
  */
 typedef struct {
-    int           one_frame_time_ms;          // Time of one frame data.
-    int           sensitivity;                // For response accuracy rate sensitivity. Default 0: 90%, 1: 95%.
-    int           vad_off_delay_ms;           // Vad off delay to stop if no voice is detected.
-    int           wakeup_time_ms;             // Time of wakeup.
-    bool          support_encoding;           // Support encoding data.
-    const char   *extension;                  // Encoding format."amr" or "amrwb" support.
-    rec_open      open;                       // Recorder open callback function.
-    rec_fetch     fetch;                      // Recorder fetch data callback function.
-    rec_close     close;                      // Recorder close callback function.
-    rec_callback  evt_cb;                     // Recorder event callback function.
-    void          *user_data;                 // User data
+    int           one_frame_duration_ms;      /*!< Duration of one frame (optional) */
+    int           sensitivity;                /*!< For response accuracy rate sensitivity. Default 0: 90%, 1: 95% */
+    int           vad_off_delay_ms;           /*!< Vad off delay to stop if no voice is detected */
+    int           wakeup_time_ms;             /*!< Time of wakeup */
+    bool          support_encoding;           /*!< Support encoding data */
+    const char   *extension;                  /*!< Encoding format."amr" or "amrwb" support */
+    rec_open      open;                       /*!< Recorder open callback function */
+    rec_fetch     fetch;                      /*!< Recorder fetch data callback function */
+    rec_close     close;                      /*!< Recorder close callback function */
+    rec_callback  evt_cb;                     /*!< Recorder event callback function */
+    void          *user_data;                 /*!< Pointer to user data (optional) */
 } rec_config_t;
 
 /**
@@ -212,8 +212,6 @@ esp_err_t rec_engine_detect_suspend(rec_voice_suspend_t flag);
 /**
  * @brief Start recording by force.
  *
- * @param none.
- *
  * @return
  *      - 0: Success
  *      - -1: Error
@@ -222,8 +220,6 @@ esp_err_t rec_engine_trigger_start(void);
 
 /**
  * @brief Stop recording by force.
- *
- * @param none.
  *
  * @return
  *      - 0: Success
@@ -235,8 +231,6 @@ esp_err_t rec_engine_trigger_stop(void);
  * @brief Destroy the recorder engine.
  *
  * @note Upon completion of this function rec_close callback will be triggered.
- *
- * @param None.
  *
  * @return
  *      - 0: Success
@@ -253,7 +247,7 @@ esp_err_t rec_engine_destroy(void);
  *              Even if disable voice activity detection, the `REC_EVENT_VAD_START` and `REC_EVENT_VAD_STOP` events
  *              still notified when `rec_engine_trigger_start` and `rec_engine_trigger_stop` called.
  *
- * @param vad_enable, true is enable vad, false disable vad
+ * @param vad_enable true is enable vad, false disable vad
  *
  * @return
  *      - 0: Success
@@ -267,7 +261,7 @@ esp_err_t rec_engine_vad_enable(bool vad_enable);
  * @note `support_encoding` must be set, `rec_engine_enc_enable` can be used.
  *       Disable encoding by default.
  *
- * @param enc_enable, true is enable encoding, false is disable.
+ * @param enc_enable true is enable encoding, false is disable.
  *
  * @return
  *     - 0: Success
@@ -298,7 +292,7 @@ esp_err_t rec_engine_enc_data_read(uint8_t *buffer, int buffer_size, int waiting
  *
  * @note if enable mute, no data fill the buffer, so the `rec_engine_enc_data_read` and `rec_engine_data_read` will be blocked.
  *
- * @param mute_enable, true is mute, false is not.
+ * @param mute_enable true is mute, false is not.
  *
  * @return
  *     - 0: Success
@@ -309,7 +303,7 @@ esp_err_t rec_engine_mute_enable(bool mute_enable);
 /**
  * @brief Get recorder engine wakeup state.
  *
- * @param wakeup_start_t, true is WAKEUP_START, false is not.
+ * @param wakeup_start_t true is WAKEUP_START, false is not.
  *
  * @return
  *     - 0: Success

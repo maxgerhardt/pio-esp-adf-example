@@ -9,6 +9,7 @@
 * root for license information.
 *
 ***************************************************************************/
+
 /* We do not want to compile the test firmware.
  * It will compile a main() and we just want our firmware.
  * */
@@ -227,5 +228,6 @@ int main (int argc, char** argv)
 
     return 0;
 }
+
 
 #endif

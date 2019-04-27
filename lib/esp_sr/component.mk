@@ -21,5 +21,4 @@ endif
 COMPONENT_ADD_LDFLAGS += -L$(COMPONENT_PATH)/lib \
                            $(addprefix -l,$(LIBS)) \
 
-$(error 123232)
 ALL_LIB_FILES += $(patsubst %,$(COMPONENT_PATH)/lib/lib%.a,$(LIBS))

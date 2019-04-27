@@ -33,7 +33,7 @@
 extern "C" {
 #endif
 
-typedef struct audio_pipeline* audio_pipeline_handle_t;
+typedef struct audio_pipeline *audio_pipeline_handle_t;
 
 /**
  * @brief Audio Pipeline configurations
@@ -79,6 +79,9 @@ esp_err_t audio_pipeline_deinit(audio_pipeline_handle_t pipeline);
  *             but `name` (as String) must be unique in audio_pipeline,
  *             which is used to identify the element for link creation mentioned in the `audio_pipeline_link`
  *
+ * @note       Because of stop pipeline or pause pipeline depend much on register order.
+ *             Please register element strictly in the following order: input element first, process middle, output element last.
+ *
  * @param[in]  pipeline The Audio Pipeline Handle
  * @param[in]  el       The Audio Element Handle
  * @param[in]  name     The name identifier of the audio_element in this audio_pipeline
@@ -102,9 +105,10 @@ esp_err_t audio_pipeline_register(audio_pipeline_handle_t pipeline, audio_elemen
 esp_err_t audio_pipeline_unregister(audio_pipeline_handle_t pipeline, audio_element_handle_t el);
 
 /**
- * @brief      Start Audio Pipeline, with this function, audio_pipeline will start all task elements,
- *             which have been registered using the `audio_pipeline_register` function.
- *             In addition this also puts all the task elements in the 'PAUSED' state.
+ * @brief    Start Audio Pipeline.
+ *
+ *           With this function audio_pipeline will create tasks for all elements,
+ *           that have been linked using the linking functions.
  *
  * @param[in]  pipeline   The Audio Pipeline Handle
  *
@@ -115,9 +119,10 @@ esp_err_t audio_pipeline_unregister(audio_pipeline_handle_t pipeline, audio_elem
 esp_err_t audio_pipeline_run(audio_pipeline_handle_t pipeline);
 
 /**
- * @brief      Start Audio Pipeline, with this function, audio_pipeline will start all task elements,
- *             which have been registered using the `audio_pipeline_register` function.
- *             In addition this also puts all the task elements in the 'PAUSED' state.
+ * @brief    Stop Audio Pipeline.
+ *
+ *           With this function audio_pipeline will destroy tasks of all elements,
+ *           that have been linked using the linking functions.
  *
  * @param[in]  pipeline   The Audio Pipeline Handle
  *
@@ -153,7 +158,7 @@ esp_err_t audio_pipeline_pause(audio_pipeline_handle_t pipeline);
  * @brief     Stop all elements and clear information of items. Free up memory for all task items.
  *            The link state of the elements in the pipeline is kept, events are still registered,
  *            but the `audio_pipeline_pause` and `audio_pipeline_resume`  functions have no effect.
- *            To restart audio_pipeline, use the `audio_pipeline_run` function
+ *            To restart audio_pipeline, use the `audio_pipeline_resume` function
  *
  * @param[in]  pipeline   The Audio Pipeline Handle
  *
@@ -204,6 +209,18 @@ esp_err_t audio_pipeline_link(audio_pipeline_handle_t pipeline, const char *link
 esp_err_t audio_pipeline_unlink(audio_pipeline_handle_t pipeline);
 
 /**
+ * @brief      Find element from registered pipeline by tag
+ *
+ * @param[in]  pipeline     The Audio Pipeline Handle
+ * @param[in]  tag          A char pointer
+ *
+ * @return
+ *     - NULL when any errors
+ *     - Others on success
+ */
+audio_element_handle_t audio_pipeline_get_el_by_tag(audio_pipeline_handle_t pipeline, const char *tag);
+
+/**
  * @brief      Remove event listener from this audio_pipeline
  *
  * @param[in]  pipeline   The Audio Pipeline Handle
@@ -249,7 +266,7 @@ audio_event_iface_handle_t audio_pipeline_get_event_iface(audio_pipeline_handle_
  *     - ESP_FAIL
  */
 esp_err_t audio_pipeline_link_insert(audio_pipeline_handle_t pipeline, bool first, audio_element_handle_t prev,
-                                ringbuf_handle_t conect_rb, audio_element_handle_t next);
+                                     ringbuf_handle_t conect_rb, audio_element_handle_t next);
 
 /**
  * @brief      Register a NULL-terminated list of elements to audio_pipeline.
@@ -337,6 +354,40 @@ esp_err_t audio_pipeline_reset_items_state(audio_pipeline_handle_t pipeline);
  *     - ESP_FAIL when any errors
  */
 esp_err_t audio_pipeline_reset_ringbuffer(audio_pipeline_handle_t pipeline);
+
+/**
+ * @brief      Break up all the linked elements of specific `pipeline`.
+ *             The include and before `kept_ctx_el` elements and connected ringbuffer will be reserved.
+ *
+ * @note       There is no element reserved when `kept_ctx_el` is NULL.
+ *             This function will unsubscribe all element's events.
+ *
+ * @param[in]  pipeline         The audio pipeline handle
+ * @param[in]  kept_ctx_el      Destination keep elements
+ *
+ * @return
+ *     - ESP_OK                 All linked elements state are same.
+ *     - ESP_ERR_INVALID_ARG    Invalid parameters.
+ */
+esp_err_t audio_pipeline_breakup_elements(audio_pipeline_handle_t pipeline, audio_element_handle_t kept_ctx_el);
+
+/**
+ * @brief      Basing on element's `name` already registered by `audio_pipeline_register`,
+ *             relink the pipeline following the order of `names` in the `link_tag.
+ *
+ * @note       If the ringbuffer is not enough to connect the new pipeline will create new ringbuffer.
+ *
+ * @param[in]  pipeline   The Audio Pipeline Handle
+ * @param      link_tag   Array of elements `name` that was registered by `audio_pipeline_register`
+ * @param[in]  link_num   Total number of elements of the `link_tag` array
+ *
+ * @return
+ *     - ESP_OK                 All linked elements state are same.
+ *     - ESP_FAIL               Error.
+ *     - ESP_ERR_INVALID_ARG    Invalid parameters.
+ */
+esp_err_t audio_pipeline_relink(audio_pipeline_handle_t pipeline, const char *link_tag[], int link_num);
+
 
 #ifdef __cplusplus
 }

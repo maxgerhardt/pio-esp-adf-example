@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="0.910961921">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.910961921" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="pio-esp-adf-example" buildProperties="" description="" id="0.910961921" name="Default" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.910961921." name="/" resourcePath="">
+						<toolChain id="org.eclipse.cdt.build.core.prefbase.toolchain.952979152" name="No ToolChain" resourceTypeBasedDiscovery="false" superClass="org.eclipse.cdt.build.core.prefbase.toolchain">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="org.eclipse.cdt.build.core.prefbase.toolchain.952979152.52310970" name=""/>
+							<builder arguments="-f -c eclipse" cleanBuildTarget="run --target clean" command="platformio" id="org.eclipse.cdt.build.core.settings.default.builder.1519453406" incrementalBuildTarget="run" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.1409095472" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.1624502120" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.239157887" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\smp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\sdp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\rfcomm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\l2cap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\gatt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\gap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\btm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avrc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avdt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avct\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\a2dp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\osi\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\hci\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\external\sbc\encoder\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\external\sbc\decoder\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\device\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\common\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\smp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\hid\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\dis\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\battery\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\a2dp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\esp\blufi\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\esp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\sys\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\sdp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\jv\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\hh\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\hf_client\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\gatt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\dm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\av\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\ar\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\api\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\app_trace\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\app_update\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\asio\asio\asio\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\asio\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\aws_iot\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\aws_iot\aws-iot-device-sdk-embedded-C\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bootloader_support\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bootloader_support\include_bootloader"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\api\include\api"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\port\include\coap"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\libcoap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\libcoap\include\coap"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\console"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\driver\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp-tls"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_adc_cal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_event\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_http_server\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_https_ota\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_ringbuf\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\ethernet\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\expat\expat\lib"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\expat\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\fatfs\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freemodbus\modbus\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freemodbus\modbus_controller"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freertos\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\heap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\jsmn\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\json\cJSON"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\libsodium\libsodium\src\libsodium\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\libsodium\port_include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\log\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\include\apps"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\lwip\src\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\port\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\port\esp32\include\arch"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\include_compat"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mbedtls\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mbedtls\mbedtls\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mdns\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\micro-ecc\micro-ecc"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mqtt\esp-mqtt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nghttp\nghttp2\lib\includes"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nghttp\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\newlib\platform_include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\newlib\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nvs_flash\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\openssl\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protobuf-c\protobuf-c"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\common"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\security"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\transports"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\pthread\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\sdmmc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\smartconfig_ack\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\soc\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\soc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\spi_flash\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\spiffs\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\tcp_transport\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\tcpip_adapter\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\ulp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\vfs\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wear_levelling\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wifi_provisioning\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wpa_supplicant\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wpa_supplicant\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\xtensa-debug-module\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\board\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\board\lyratd_msc_v2_2"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\es8374"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\es8388"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\api_lib"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\example_apps"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\firmware"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_pipeline\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_sal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_stream\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include\codec"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include\processing"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\resample\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\wav\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client\lib\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_pipeline"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_sal"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_stream"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\adf_utils"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\clouds"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\display_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\dueros_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp-tls"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_audio"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_deamon"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_dlna"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_peripherals"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_sr"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_ssdp"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_upnp"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\http_server\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\http_server\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\input_key_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\recorder_engine"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\tcp_transport"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\wifi_service\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\wifi_service\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\tool-unity"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\include"/>
+								</option>
+								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.922107295" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="WITH_POSIX"/>
+									<listOptionValue builtIn="false" value="IDF_VER=&quot;3.30200.190418&quot;"/>
+									<listOptionValue builtIn="false" value="PLATFORMIO=40000"/>
+									<listOptionValue builtIn="false" value="ARDUINO_ESP32_DEV"/>
+									<listOptionValue builtIn="false" value="CONFIG_ESP_LYRATD_MSC_V2_2_BOARD"/>
+									<listOptionValue builtIn="false" value="ESP32"/>
+									<listOptionValue builtIn="false" value="ESP_PLATFORM"/>
+									<listOptionValue builtIn="false" value="F_CPU=240000000L"/>
+									<listOptionValue builtIn="false" value="HAVE_CONFIG_H"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
+									<listOptionValue builtIn="false" value="GCC_NOT_5_2_0=0"/>
+								</option>
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.149990277" languageId="org.eclipse.cdt.core.assembly" languageName="Assembly" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.54121539" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1096940598" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\smp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\sdp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\rfcomm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\l2cap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\gatt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\gap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\btm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avrc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avdt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avct\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\a2dp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\osi\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\hci\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\external\sbc\encoder\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\external\sbc\decoder\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\device\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\common\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\smp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\hid\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\dis\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\battery\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\a2dp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\esp\blufi\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\esp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\sys\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\sdp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\jv\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\hh\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\hf_client\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\gatt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\dm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\av\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\ar\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\api\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\app_trace\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\app_update\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\asio\asio\asio\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\asio\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\aws_iot\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\aws_iot\aws-iot-device-sdk-embedded-C\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bootloader_support\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bootloader_support\include_bootloader"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\api\include\api"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\port\include\coap"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\libcoap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\libcoap\include\coap"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\console"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\driver\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp-tls"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_adc_cal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_event\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_http_server\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_https_ota\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_ringbuf\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\ethernet\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\expat\expat\lib"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\expat\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\fatfs\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freemodbus\modbus\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freemodbus\modbus_controller"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freertos\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\heap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\jsmn\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\json\cJSON"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\libsodium\libsodium\src\libsodium\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\libsodium\port_include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\log\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\include\apps"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\lwip\src\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\port\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\port\esp32\include\arch"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\include_compat"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mbedtls\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mbedtls\mbedtls\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mdns\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\micro-ecc\micro-ecc"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mqtt\esp-mqtt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nghttp\nghttp2\lib\includes"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nghttp\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\newlib\platform_include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\newlib\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nvs_flash\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\openssl\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protobuf-c\protobuf-c"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\common"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\security"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\transports"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\pthread\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\sdmmc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\smartconfig_ack\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\soc\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\soc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\spi_flash\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\spiffs\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\tcp_transport\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\tcpip_adapter\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\ulp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\vfs\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wear_levelling\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wifi_provisioning\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wpa_supplicant\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wpa_supplicant\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\xtensa-debug-module\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\board\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\board\lyratd_msc_v2_2"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\es8374"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\es8388"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\api_lib"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\example_apps"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\firmware"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_pipeline\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_sal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_stream\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include\codec"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include\processing"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\resample\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\wav\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client\lib\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_pipeline"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_sal"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_stream"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\adf_utils"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\clouds"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\display_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\dueros_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp-tls"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_audio"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_deamon"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_dlna"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_peripherals"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_sr"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_ssdp"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_upnp"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\http_server\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\http_server\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\input_key_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\recorder_engine"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\tcp_transport"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\wifi_service\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\wifi_service\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\tool-unity"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\include"/>
+								</option>
+								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.1198905600" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="WITH_POSIX"/>
+									<listOptionValue builtIn="false" value="IDF_VER=&quot;3.30200.190418&quot;"/>
+									<listOptionValue builtIn="false" value="PLATFORMIO=40000"/>
+									<listOptionValue builtIn="false" value="ARDUINO_ESP32_DEV"/>
+									<listOptionValue builtIn="false" value="CONFIG_ESP_LYRATD_MSC_V2_2_BOARD"/>
+									<listOptionValue builtIn="false" value="ESP32"/>
+									<listOptionValue builtIn="false" value="ESP_PLATFORM"/>
+									<listOptionValue builtIn="false" value="F_CPU=240000000L"/>
+									<listOptionValue builtIn="false" value="HAVE_CONFIG_H"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
+									<listOptionValue builtIn="false" value="GCC_NOT_5_2_0=0"/>
+								</option>
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.762536863" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.1310559623" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.41298875" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\smp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\sdp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\rfcomm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\l2cap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\gatt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\gap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\btm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avrc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avdt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avct\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\a2dp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\osi\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\hci\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\external\sbc\encoder\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\external\sbc\decoder\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\device\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\common\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\smp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\hid\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\dis\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\battery\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\a2dp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\esp\blufi\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\esp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\sys\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\sdp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\jv\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\hh\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\hf_client\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\gatt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\dm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\av\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\ar\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\api\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\app_trace\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\app_update\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\asio\asio\asio\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\asio\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\aws_iot\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\aws_iot\aws-iot-device-sdk-embedded-C\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bootloader_support\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bootloader_support\include_bootloader"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\api\include\api"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\port\include\coap"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\libcoap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\libcoap\include\coap"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\console"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\driver\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp-tls"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_adc_cal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_event\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_http_server\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_https_ota\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_ringbuf\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\ethernet\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\expat\expat\lib"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\expat\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\fatfs\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freemodbus\modbus\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freemodbus\modbus_controller"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freertos\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\heap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\jsmn\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\json\cJSON"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\libsodium\libsodium\src\libsodium\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\libsodium\port_include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\log\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\include\apps"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\lwip\src\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\port\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\port\esp32\include\arch"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\include_compat"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mbedtls\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mbedtls\mbedtls\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mdns\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\micro-ecc\micro-ecc"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mqtt\esp-mqtt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nghttp\nghttp2\lib\includes"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nghttp\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\newlib\platform_include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\newlib\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nvs_flash\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\openssl\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protobuf-c\protobuf-c"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\common"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\security"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\transports"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\pthread\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\sdmmc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\smartconfig_ack\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\soc\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\soc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\spi_flash\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\spiffs\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\tcp_transport\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\tcpip_adapter\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\ulp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\vfs\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wear_levelling\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wifi_provisioning\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wpa_supplicant\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wpa_supplicant\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\xtensa-debug-module\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\board\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\board\lyratd_msc_v2_2"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\es8374"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\es8388"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\api_lib"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\example_apps"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\firmware"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_pipeline\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_sal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_stream\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include\codec"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include\processing"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\resample\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\wav\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client\lib\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_pipeline"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_sal"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_stream"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\adf_utils"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\clouds"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\display_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\dueros_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp-tls"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_audio"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_deamon"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_dlna"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_peripherals"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_sr"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_ssdp"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_upnp"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\http_server\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\http_server\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\input_key_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\recorder_engine"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\tcp_transport"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\wifi_service\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\wifi_service\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\tool-unity"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\include"/>
+								</option>
+								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.884639970" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="WITH_POSIX"/>
+									<listOptionValue builtIn="false" value="IDF_VER=&quot;3.30200.190418&quot;"/>
+									<listOptionValue builtIn="false" value="PLATFORMIO=40000"/>
+									<listOptionValue builtIn="false" value="ARDUINO_ESP32_DEV"/>
+									<listOptionValue builtIn="false" value="CONFIG_ESP_LYRATD_MSC_V2_2_BOARD"/>
+									<listOptionValue builtIn="false" value="ESP32"/>
+									<listOptionValue builtIn="false" value="ESP_PLATFORM"/>
+									<listOptionValue builtIn="false" value="F_CPU=240000000L"/>
+									<listOptionValue builtIn="false" value="HAVE_CONFIG_H"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
+									<listOptionValue builtIn="false" value="GCC_NOT_5_2_0=0"/>
+								</option>
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.549319812" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="0.910961921.1363900502">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.910961921.1363900502" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="mbed" buildProperties="" description="" id="0.910961921.1363900502" name="Debug" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.910961921.1363900502." name="/" resourcePath="">
+						<toolChain id="org.eclipse.cdt.build.core.prefbase.toolchain.2116690625" name="No ToolChain" resourceTypeBasedDiscovery="false" superClass="org.eclipse.cdt.build.core.prefbase.toolchain">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="org.eclipse.cdt.build.core.prefbase.toolchain.2116690625.848954921" name=""/>
+							<builder arguments="-f -c eclipse debug" cleanBuildTarget="run --target clean" command="platformio" enableCleanBuild="false" id="org.eclipse.cdt.build.core.settings.default.builder.985867833" incrementalBuildTarget="" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.1855678035" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.30528994" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.794801023" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\smp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\sdp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\rfcomm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\l2cap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\gatt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\gap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\btm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avrc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avdt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avct\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\a2dp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\osi\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\hci\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\external\sbc\encoder\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\external\sbc\decoder\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\device\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\common\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\smp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\hid\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\dis\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\battery\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\a2dp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\esp\blufi\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\esp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\sys\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\sdp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\jv\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\hh\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\hf_client\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\gatt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\dm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\av\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\ar\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\api\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\app_trace\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\app_update\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\asio\asio\asio\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\asio\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\aws_iot\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\aws_iot\aws-iot-device-sdk-embedded-C\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bootloader_support\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bootloader_support\include_bootloader"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\api\include\api"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\port\include\coap"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\libcoap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\libcoap\include\coap"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\console"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\driver\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp-tls"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_adc_cal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_event\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_http_server\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_https_ota\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_ringbuf\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\ethernet\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\expat\expat\lib"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\expat\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\fatfs\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freemodbus\modbus\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freemodbus\modbus_controller"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freertos\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\heap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\jsmn\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\json\cJSON"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\libsodium\libsodium\src\libsodium\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\libsodium\port_include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\log\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\include\apps"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\lwip\src\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\port\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\port\esp32\include\arch"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\include_compat"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mbedtls\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mbedtls\mbedtls\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mdns\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\micro-ecc\micro-ecc"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mqtt\esp-mqtt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nghttp\nghttp2\lib\includes"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nghttp\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\newlib\platform_include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\newlib\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nvs_flash\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\openssl\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protobuf-c\protobuf-c"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\common"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\security"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\transports"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\pthread\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\sdmmc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\smartconfig_ack\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\soc\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\soc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\spi_flash\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\spiffs\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\tcp_transport\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\tcpip_adapter\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\ulp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\vfs\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wear_levelling\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wifi_provisioning\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wpa_supplicant\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wpa_supplicant\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\xtensa-debug-module\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\board\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\board\lyratd_msc_v2_2"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\es8374"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\es8388"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\api_lib"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\example_apps"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\firmware"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_pipeline\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_sal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_stream\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include\codec"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include\processing"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\resample\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\wav\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client\lib\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_pipeline"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_sal"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_stream"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\adf_utils"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\clouds"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\display_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\dueros_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp-tls"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_audio"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_deamon"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_dlna"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_peripherals"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_sr"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_ssdp"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_upnp"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\http_server\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\http_server\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\input_key_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\recorder_engine"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\tcp_transport"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\wifi_service\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\wifi_service\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\tool-unity"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\include"/>
+								</option>
+								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.1743427839" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="WITH_POSIX"/>
+									<listOptionValue builtIn="false" value="IDF_VER=&quot;3.30200.190418&quot;"/>
+									<listOptionValue builtIn="false" value="PLATFORMIO=40000"/>
+									<listOptionValue builtIn="false" value="ARDUINO_ESP32_DEV"/>
+									<listOptionValue builtIn="false" value="CONFIG_ESP_LYRATD_MSC_V2_2_BOARD"/>
+									<listOptionValue builtIn="false" value="ESP32"/>
+									<listOptionValue builtIn="false" value="ESP_PLATFORM"/>
+									<listOptionValue builtIn="false" value="F_CPU=240000000L"/>
+									<listOptionValue builtIn="false" value="HAVE_CONFIG_H"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
+									<listOptionValue builtIn="false" value="GCC_NOT_5_2_0=0"/>
+								</option>
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.919136836" languageId="org.eclipse.cdt.core.assembly" languageName="Assembly" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.1146422798" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.650084869" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\smp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\sdp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\rfcomm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\l2cap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\gatt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\gap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\btm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avrc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avdt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avct\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\a2dp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\osi\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\hci\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\external\sbc\encoder\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\external\sbc\decoder\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\device\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\common\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\smp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\hid\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\dis\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\battery\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\a2dp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\esp\blufi\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\esp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\sys\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\sdp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\jv\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\hh\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\hf_client\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\gatt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\dm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\av\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\ar\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\api\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\app_trace\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\app_update\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\asio\asio\asio\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\asio\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\aws_iot\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\aws_iot\aws-iot-device-sdk-embedded-C\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bootloader_support\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bootloader_support\include_bootloader"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\api\include\api"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\port\include\coap"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\libcoap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\libcoap\include\coap"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\console"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\driver\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp-tls"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_adc_cal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_event\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_http_server\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_https_ota\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_ringbuf\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\ethernet\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\expat\expat\lib"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\expat\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\fatfs\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freemodbus\modbus\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freemodbus\modbus_controller"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freertos\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\heap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\jsmn\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\json\cJSON"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\libsodium\libsodium\src\libsodium\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\libsodium\port_include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\log\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\include\apps"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\lwip\src\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\port\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\port\esp32\include\arch"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\include_compat"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mbedtls\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mbedtls\mbedtls\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mdns\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\micro-ecc\micro-ecc"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mqtt\esp-mqtt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nghttp\nghttp2\lib\includes"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nghttp\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\newlib\platform_include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\newlib\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nvs_flash\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\openssl\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protobuf-c\protobuf-c"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\common"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\security"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\transports"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\pthread\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\sdmmc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\smartconfig_ack\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\soc\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\soc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\spi_flash\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\spiffs\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\tcp_transport\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\tcpip_adapter\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\ulp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\vfs\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wear_levelling\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wifi_provisioning\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wpa_supplicant\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wpa_supplicant\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\xtensa-debug-module\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\board\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\board\lyratd_msc_v2_2"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\es8374"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\es8388"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\api_lib"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\example_apps"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\firmware"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_pipeline\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_sal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_stream\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include\codec"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include\processing"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\resample\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\wav\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client\lib\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_pipeline"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_sal"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_stream"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\adf_utils"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\clouds"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\display_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\dueros_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp-tls"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_audio"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_deamon"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_dlna"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_peripherals"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_sr"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_ssdp"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_upnp"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\http_server\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\http_server\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\input_key_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\recorder_engine"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\tcp_transport"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\wifi_service\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\wifi_service\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\tool-unity"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\include"/>
+								</option>
+								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.2055633423" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="WITH_POSIX"/>
+									<listOptionValue builtIn="false" value="IDF_VER=&quot;3.30200.190418&quot;"/>
+									<listOptionValue builtIn="false" value="PLATFORMIO=40000"/>
+									<listOptionValue builtIn="false" value="ARDUINO_ESP32_DEV"/>
+									<listOptionValue builtIn="false" value="CONFIG_ESP_LYRATD_MSC_V2_2_BOARD"/>
+									<listOptionValue builtIn="false" value="ESP32"/>
+									<listOptionValue builtIn="false" value="ESP_PLATFORM"/>
+									<listOptionValue builtIn="false" value="F_CPU=240000000L"/>
+									<listOptionValue builtIn="false" value="HAVE_CONFIG_H"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
+									<listOptionValue builtIn="false" value="GCC_NOT_5_2_0=0"/>
+								</option>
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.445650141" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.1637357529" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1246337321" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\smp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\sdp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\rfcomm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\l2cap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\gatt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\gap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\btm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avrc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avdt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\avct\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\a2dp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\stack\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\osi\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\hci\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\external\sbc\encoder\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\external\sbc\decoder\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\device\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\common\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\smp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\hid\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\dis\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\battery\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\a2dp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\std\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\esp\blufi\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\profile\esp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\btc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\sys\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\sdp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\jv\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\hh\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\hf_client\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\gatt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\dm\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\av\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\ar\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\bta\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\api\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\app_trace\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\app_update\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\asio\asio\asio\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\asio\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\aws_iot\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\aws_iot\aws-iot-device-sdk-embedded-C\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bootloader_support\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bootloader_support\include_bootloader"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\bt\bluedroid\api\include\api"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\port\include\coap"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\libcoap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\coap\libcoap\include\coap"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\console"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\driver\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp-tls"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_adc_cal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_event\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_http_server\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_https_ota\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp_ringbuf\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\ethernet\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\expat\expat\lib"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\expat\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\fatfs\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freemodbus\modbus\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freemodbus\modbus_controller"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\freertos\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\heap\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\jsmn\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\json\cJSON"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\libsodium\libsodium\src\libsodium\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\libsodium\port_include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\log\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\include\apps"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\lwip\src\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\port\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\lwip\port\esp32\include\arch"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\include_compat"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mbedtls\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mbedtls\mbedtls\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mdns\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\micro-ecc\micro-ecc"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\mqtt\esp-mqtt\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nghttp\nghttp2\lib\includes"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nghttp\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\newlib\platform_include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\newlib\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\nvs_flash\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\openssl\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protobuf-c\protobuf-c"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\common"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\security"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\protocomm\include\transports"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\pthread\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\sdmmc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\smartconfig_ack\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\soc\esp32\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\soc\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\spi_flash\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\spiffs\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\tcp_transport\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\tcpip_adapter\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\ulp\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\vfs\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wear_levelling\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wifi_provisioning\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wpa_supplicant\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\wpa_supplicant\port\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\framework-espidf\components\xtensa-debug-module\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\board\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\board\lyratd_msc_v2_2"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\es8374"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\es8388"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\api_lib"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\example_apps"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal\driver\zl38063\firmware"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_pipeline\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_sal\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_stream\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include\codec"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\include\processing"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\resample\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec\wav\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client\lib\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_hal"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_pipeline"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_sal"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_stream"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_codec"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_http_client"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\adf_utils"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\audio_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\clouds"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\display_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\dueros_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp-tls"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_audio"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_deamon"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_dlna"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_peripherals"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_sr"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_ssdp"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\esp_upnp"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\http_server\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\http_server\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\input_key_service"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\recorder_engine"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\tcp_transport"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\wifi_service\include"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\lib\wifi_service\src"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\.platformio\packages\tool-unity"/>
+									<listOptionValue builtIn="false" value="${USERPROFILE}\Desktop\pio-esp-adf-example\include"/>
+								</option>
+								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.2122043341" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="WITH_POSIX"/>
+									<listOptionValue builtIn="false" value="IDF_VER=&quot;3.30200.190418&quot;"/>
+									<listOptionValue builtIn="false" value="PLATFORMIO=40000"/>
+									<listOptionValue builtIn="false" value="ARDUINO_ESP32_DEV"/>
+									<listOptionValue builtIn="false" value="CONFIG_ESP_LYRATD_MSC_V2_2_BOARD"/>
+									<listOptionValue builtIn="false" value="ESP32"/>
+									<listOptionValue builtIn="false" value="ESP_PLATFORM"/>
+									<listOptionValue builtIn="false" value="F_CPU=240000000L"/>
+									<listOptionValue builtIn="false" value="HAVE_CONFIG_H"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
+									<listOptionValue builtIn="false" value="GCC_NOT_5_2_0=0"/>
+								</option>
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.207004812" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="pio-esp-adf-example.null.189551033" name="pio-esp-adf-example"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="0.910961921">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/esp32dev"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
+		<buildTargets>
+			<target name="PlatformIO: Upload using Programmer" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>platformio</buildCommand>
+				<buildArguments>-f -c eclipse</buildArguments>
+				<buildTarget>run -t program</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>false</runAllBuilders>
+			</target>
+			<target name="PlatformIO: Upload SPIFFS image" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>platformio</buildCommand>
+				<buildArguments>-f -c eclipse</buildArguments>
+				<buildTarget>run -t uploadfs</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>false</runAllBuilders>
+			</target>
+			<target name="PlatformIO: Build" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>platformio</buildCommand>
+				<buildArguments>-f -c eclipse</buildArguments>
+				<buildTarget>run</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>false</runAllBuilders>
+			</target>
+			<target name="PlatformIO: Upload" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>platformio</buildCommand>
+				<buildArguments>-f -c eclipse</buildArguments>
+				<buildTarget>run -t upload</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>false</runAllBuilders>
+			</target>
+			<target name="PlatformIO: Clean" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>platformio</buildCommand>
+				<buildArguments>-f -c eclipse</buildArguments>
+				<buildTarget>run -t clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>false</runAllBuilders>
+			</target>
+			<target name="PlatformIO: Test" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>platformio</buildCommand>
+				<buildArguments>-f -c eclipse</buildArguments>
+				<buildTarget>test</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>false</runAllBuilders>
+			</target>
+			<target name="PlatformIO: Update platforms and libraries" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>platformio</buildCommand>
+				<buildArguments>-f -c eclipse</buildArguments>
+				<buildTarget>update</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>false</runAllBuilders>
+			</target>
+			<target name="PlatformIO: Rebuild C/C++ Project Index" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>platformio</buildCommand>
+				<buildArguments>-f -c eclipse</buildArguments>
+				<buildTarget>init --ide eclipse</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>false</runAllBuilders>
+			</target>
+		</buildTargets>
+	</storageModule>
+</cproject>
