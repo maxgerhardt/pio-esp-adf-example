@@ -176,7 +176,7 @@ void led_test() {
 	is31fl3216_handle_t drvHandle = is31fl3216_init();
 
 	//repeat 5 times
-	for(int j=0; j < 5; j++) {
+	for(int j=0; j < 10; j++) {
 		for(int i=1; i <= 16; i++) {
 			if ( i % 2 == 0){ //light up all even leds
 				is31fl3216_ch_enable(drvHandle, (is31_pwm_channel_t) (1 << i));
@@ -187,7 +187,7 @@ void led_test() {
 			}
 		}
 
-		vTaskDelay(2000 / portTICK_PERIOD_MS );
+		vTaskDelay(500 / portTICK_PERIOD_MS );
 
 		for(int i=1; i <= 16; i++) {
 			if ( i % 2 == 1){ //light up all uneven
@@ -199,7 +199,7 @@ void led_test() {
 			}
 		}
 
-		vTaskDelay(2000 / portTICK_PERIOD_MS );
+		vTaskDelay(500 / portTICK_PERIOD_MS );
 	}
 
 	// turn on LED channel 1
@@ -208,6 +208,8 @@ void led_test() {
 
 	//vTaskDelay(2000 / portTICK_PERIOD_MS );
 
+	is31fl3216_ch_disable(drvHandle, IS31FL3216_CH_ALL);
+	is31fl3216_ch_duty_set(drvHandle, IS31FL3216_CH_ALL, 0);
 	//destroy driver
-	//is31fl3216_deinit(drvHandle);
+	is31fl3216_deinit(drvHandle);
 }

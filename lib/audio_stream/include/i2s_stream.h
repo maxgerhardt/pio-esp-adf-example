@@ -59,7 +59,7 @@ typedef struct {
     .i2s_config = {                                                             \
         .mode = I2S_MODE_MASTER | I2S_MODE_TX | I2S_MODE_RX,                    \
         .sample_rate = 44100,                                                   \
-        .bits_per_sample = 16,                                                  \
+        .bits_per_sample = I2S_BITS_PER_SAMPLE_16BIT,                                                  \
         .channel_format = I2S_CHANNEL_FMT_RIGHT_LEFT,                           \
         .communication_format = I2S_COMM_FORMAT_I2S,                            \
         .intr_alloc_flags = ESP_INTR_FLAG_LEVEL2,                               \
