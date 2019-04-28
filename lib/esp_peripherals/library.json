@@ -1,0 +1,29 @@
+{
+  "name": "esp_peripherals",
+  "keywords": "audio, esp-adf",
+  "description": "The esp_peripherals component of ESP-ADF",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxgerhardt/tobefilled.git"
+  },
+  "version": "1.0",
+  "authors": {
+    "name": "ESPRESSIF SYSTEMS (SHANGHAI) PTE LTD",
+    "url": "https://github.com/espressif/esp-adf"
+  },
+  "licence": "MIT",
+  "frameworks": "espidf",
+  "platforms": "espressif32",
+  "build" : {
+    "flags": [
+      "-I driver/i2c_bus",
+      "-I include",
+      "-I lib/adc_button",
+      "-I lib/blufi",
+      "-I lib/button",
+      "-I lib/IS31FL3216",
+      "-I lib/sdcard",
+      "-I lib/touch"
+    ]
+  }
+}

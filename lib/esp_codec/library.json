@@ -1,0 +1,29 @@
+{
+  "name": "esp_codec",
+  "keywords": "audio, esp-adf",
+  "description": "The esp_codec  component of ESP-ADF",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxgerhardt/tobefilled.git"
+  },
+  "version": "1.0",
+  "authors": {
+    "name": "ESPRESSIF SYSTEMS (SHANGHAI) PTE LTD",
+    "url": "https://github.com/espressif/esp-adf"
+  },
+  "licence": "MIT",
+  "frameworks": "espidf",
+  "platforms": "espressif32",
+  "build" : {
+    "flags": [
+      "-I include",
+      "-I include/codec",
+      "-I include/processing",
+      "-I resample/include",
+      "-I wav/include",
+      "-L lib",
+      "-lesp_codec"
+    ],
+    "libArchive": false
+  }
+}

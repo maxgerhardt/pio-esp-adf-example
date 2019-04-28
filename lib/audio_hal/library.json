@@ -1,0 +1,32 @@
+{
+  "name": "audio_hal",
+  "keywords": "audio, esp-adf",
+  "description": "The audio_hal component of ESP-ADF",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxgerhardt/tobefilled.git"
+  },
+  "version": "1.0",
+  "authors": {
+    "name": "ESPRESSIF SYSTEMS (SHANGHAI) PTE LTD",
+    "url": "https://github.com/espressif/esp-adf"
+  },
+  "licence": "MIT",
+  "frameworks": "espidf",
+  "platforms": "espressif32",
+  "build" : {
+    "flags": [
+      "-I include",
+      "-I board/include",
+      "-I board/lyratd_msc_v2_2",
+      "-I driver/es8374",
+      "-I driver/es8388",
+      "-I driver/zl38063",
+      "-I driver/zl38063/api_lib",
+      "-I driver/zl38063/example_apps",
+      "-I driver/zl38063/firmware",
+      "-L driver/zl38063/firmware",
+      "-lfirmware"
+    ]
+  }
+}

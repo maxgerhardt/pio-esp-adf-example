@@ -1,0 +1,23 @@
+{
+  "name": "dueros_service",
+  "keywords": "esp-adf",
+  "description": "The dueros_service component of ESP-ADF",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxgerhardt/tobefilled.git"
+  },
+  "version": "1.0",
+  "authors": {
+    "name": "ESPRESSIF SYSTEMS (SHANGHAI) PTE LTD",
+    "url": "https://github.com/espressif/esp-adf"
+  },
+  "licence": "MIT",
+  "frameworks": "espidf",
+  "platforms": "espressif32",
+  "build" : {
+    "flags": [
+      "-I include",
+      "-D COMPONENT_EMBED_TXTFILES_NOT_YET_WORKING=duer_profile"
+    ]
+  }
+}
