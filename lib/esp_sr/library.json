@@ -1,0 +1,26 @@
+{
+  "name": "esp_sr",
+  "keywords": "audio, esp-adf, speech-recognition",
+  "description": "The esp_sr component of ESP-ADF",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxgerhardt/tobefilled.git"
+  },
+  "version": "1.0",
+  "authors": {
+    "name": "ESPRESSIF SYSTEMS (SHANGHAI) PTE LTD",
+    "url": "https://github.com/espressif/esp-adf"
+  },
+  "licence": "MIT",
+  "frameworks": "espidf",
+  "platforms": "espressif32",
+  "build" : {
+    "flags": [
+      "-I include",
+      "-L lib",
+      "-lvad",
+      "-lesp_wakenet",
+      "-lnn_model_alexa_wn3"
+    ]
+  }
+}

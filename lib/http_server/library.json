@@ -1,0 +1,24 @@
+{
+  "name": "http_server",
+  "keywords": "http, esp-adf",
+  "description": "The http_server component of ESP-ADF",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxgerhardt/tobefilled.git"
+  },
+  "version": "1.0",
+  "authors": {
+    "name": "ESPRESSIF SYSTEMS (SHANGHAI) PTE LTD",
+    "url": "https://github.com/espressif/esp-adf"
+  },
+  "licence": "MIT",
+  "frameworks": "espidf",
+  "platforms": "espressif32",
+  "build" : {
+    "flags": [
+      "-I include",
+      "-I src/port/esp32",
+      "-I src/util"
+    ]
+  }
+}

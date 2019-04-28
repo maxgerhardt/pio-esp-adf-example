@@ -1,0 +1,22 @@
+{
+  "name": "tcp_transport",
+  "keywords": "esp-adf",
+  "description": "The tcp_transport component of ESP-ADF",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxgerhardt/tobefilled.git"
+  },
+  "version": "1.0",
+  "authors": {
+    "name": "ESPRESSIF SYSTEMS (SHANGHAI) PTE LTD",
+    "url": "https://github.com/espressif/esp-adf"
+  },
+  "licence": "MIT",
+  "frameworks": "espidf",
+  "platforms": "espressif32",
+  "build" : {
+    "flags": [
+      "-I include"
+    ]
+  }
+}
