@@ -22,50 +22,40 @@
  *
  */
 
-#ifndef _AUDIO_COMMON_H_
-#define _AUDIO_COMMON_H_
-
+#ifndef __AUDIO_URL_H__
+#define __AUDIO_URL_H__
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-#define ELEMENT_SUB_TYPE_OFFSET 16
+/**
+ * @brief Allocate new memory, encoding given string to percent-encoding and return the pointer
+ *
+ * @note Returned pointer should be freed by user.
+ *       ALPHA(0x41-0x5A and 0x61-0x7A), DIGIT (0x30-0x39) and "~!@#$&*()=:/,;?+'-_." are reserved.
+ *
+ * @param  str   String to be encode
+ *
+ * @return
+ *     - valid pointer on success
+ *     - NULL when any errors
+ */
+char *audio_url_encode(const char *str);
 
-typedef enum {
-    AUDIO_ELEMENT_TYPE_UNKNOW = 0x01<<ELEMENT_SUB_TYPE_OFFSET,
-    AUDIO_ELEMENT_TYPE_ELEMENT= 0x01<<(ELEMENT_SUB_TYPE_OFFSET+1),
-    AUDIO_ELEMENT_TYPE_PLAYER = 0x01<<(ELEMENT_SUB_TYPE_OFFSET+2),
-    AUDIO_ELEMENT_TYPE_SERVICE = 0x01<<(ELEMENT_SUB_TYPE_OFFSET+3),
-    AUDIO_ELEMENT_TYPE_PERIPH = 0x01<<(ELEMENT_SUB_TYPE_OFFSET+4),
-} audio_element_type_t;
+/**
+ * @brief Allocate new memory, decoding given percent-encoding string and return the pointer
+ *
+ * @note Returned pointer should be freed by user
+ *
+ * @param str  String to be decode
+ *
+ * @return
+ *     - valid pointer on success
+ *     - NULL when any errors
+ */
+char *audio_url_decode(const char *str);
 
-typedef enum {
-    AUDIO_STREAM_NONE = 0,
-    AUDIO_STREAM_READER,
-    AUDIO_STREAM_WRITER
-} audio_stream_type_t;
-
-typedef enum {
-    AUDIO_CODEC_TYPE_NONE = 0,
-    AUDIO_CODEC_TYPE_DECODER,
-    AUDIO_CODEC_TYPE_ENCODER
-} audio_codec_type_t;
-
-typedef enum {
-    AUDIO_CODEC_NONE = 0,
-    AUDIO_CODEC_RAW,
-    AUDIO_CODEC_WAV,
-    AUDIO_CODEC_MP3,
-    AUDIO_CODEC_AAC,
-    AUDIO_CODEC_OPUS,
-    AUDIO_CODEC_M4A,
-    AUDIO_CODEC_TS,
-    AUDIO_CODEC_AMR,
-    AUDIO_PLAYLIST
-} audio_codec_t;
-
-#define mem_assert(x)
 
 #ifdef __cplusplus
 }
