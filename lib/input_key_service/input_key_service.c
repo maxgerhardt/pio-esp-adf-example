@@ -1,3 +1,28 @@
+
+/*
+ * ESPRESSIF MIT License
+ *
+ * Copyright (c) 2019 <ESPRESSIF SYSTEMS (SHANGHAI) CO., LTD>
+ *
+ * Permission is hereby granted for use on all ESPRESSIF SYSTEMS products, in which case,
+ * it is free of charge, to any person obtaining a copy of this software and associated
+ * documentation files (the "Software"), to deal in the Software without restriction, including
+ * without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ * and/or sell copies of the Software, and to permit persons to whom the Software is furnished
+ * to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or
+ * substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+ * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+ * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ */
+
 #include <string.h>
 #include "esp_log.h"
 #include "audio_error.h"
@@ -7,7 +32,7 @@
 #include "input_key_service.h"
 #include "audio_event_iface.h"
 
-#define INPUT_KEY_SERVICE_TASK_STACK_SIZE (2 * 1024)
+#define INPUT_KEY_SERVICE_TASK_STACK_SIZE (3 * 1024)
 #define INPUT_KEY_SERVICE_TASK_PRIORITY   (5)
 #define INPUT_KEY_SERVICE_TASK_ON_CORE    (1)
 
@@ -57,7 +82,7 @@ static esp_err_t input_key_service_event_receive(periph_service_handle_t handle,
 
 static int get_input_key_user_id(input_key_service_t *input_key_ser, int source_type, int act_id)
 {
-    AUDIO_NULL_CHECK(TAG, input_key_ser, return USER_ID_UNKNOWN);
+    AUDIO_NULL_CHECK(TAG, input_key_ser, return INPUT_KEY_USER_ID_UNKNOWN);
 
     input_key_service_info_t *key_info = NULL;
     input_key_node_t *tmp_node = NULL;
@@ -69,7 +94,7 @@ static int get_input_key_user_id(input_key_service_t *input_key_ser, int source_
         }
     }
 
-    return USER_ID_UNKNOWN;
+    return INPUT_KEY_USER_ID_UNKNOWN;
 }
 
 static void input_key_service_task(void *parameters)
@@ -145,6 +170,7 @@ esp_err_t input_key_service_add_key(periph_service_handle_t input_key_handle, in
 
     for (int i = 0; i < add_key_num; i++) {
         input_key_node_t *input_key_node = (input_key_node_t *)audio_calloc(1, sizeof(input_key_node_t));
+        AUDIO_NULL_CHECK(TAG, input_key_node, return ESP_FAIL);
         memcpy(&input_key_node->input_key_info, &input_key_info[i], sizeof(input_key_service_info_t));
         STAILQ_INSERT_TAIL(&input_key_ser->input_info_list, input_key_node, entries);
     }

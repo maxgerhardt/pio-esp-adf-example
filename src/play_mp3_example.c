@@ -36,7 +36,8 @@ void led_test2(void);
 void test_buttons(void);
 void asr_example();
 
-audio_element_err_t mp3_music_read_cb(audio_element_handle_t el, char *buf, int len, TickType_t wait_time, void *ctx)
+
+int mp3_music_read_cb(audio_element_handle_t el, char *buf, int len, TickType_t wait_time, void *ctx)
 {
     static int mp3_pos;
     int read_size = adf_music_mp3_end - adf_music_mp3_start - mp3_pos;
@@ -47,7 +48,7 @@ audio_element_err_t mp3_music_read_cb(audio_element_handle_t el, char *buf, int 
     }
     memcpy(buf, adf_music_mp3_start + mp3_pos, read_size);
     mp3_pos += read_size;
-    return (audio_element_err_t) read_size;
+    return read_size;
 }
 
 void app_main(void)
@@ -65,7 +66,6 @@ void app_main(void)
 
     led_test();
 
-
     ESP_LOGI(TAG, "[ 1 ] Start audio codec chip");
     audio_board_handle_t board_handle = audio_board_init();
     audio_hal_ctrl_codec(board_handle->audio_hal, AUDIO_HAL_CODEC_MODE_BOTH, AUDIO_HAL_CTRL_START);
@@ -78,8 +78,6 @@ void app_main(void)
     ESP_LOGI(TAG, "[2.1] Create mp3 decoder to decode mp3 file and set custom read callback");
     mp3_decoder_cfg_t mp3_cfg = DEFAULT_MP3_DECODER_CONFIG();
     mp3_decoder = mp3_decoder_init(&mp3_cfg);
-    // typedef audio_element_err_t (*stream_func)(audio_element_handle_t self, char *buffer, int len, TickType_t ticks_to_wait,
-    //void *context);
     audio_element_set_read_cb(mp3_decoder, mp3_music_read_cb, NULL);
 
     ESP_LOGI(TAG, "[2.2] Create i2s stream to write data to codec chip");
@@ -93,15 +91,11 @@ void app_main(void)
     audio_pipeline_register(pipeline, i2s_stream_writer, "i2s");
 
     ESP_LOGI(TAG, "[2.4] Link it together [mp3_music_read_cb]-->mp3_decoder-->i2s_stream-->[codec_chip]");
-#if (CONFIG_ESP_LYRAT_V4_3_BOARD || CONFIG_ESP_LYRAT_V4_2_BOARD)
-    const char* link_tags[] = {"mp3", "i2s"};
-    audio_pipeline_link(pipeline, link_tags, 2);
-#endif
 
     /**Zl38063 does not support 44.1KHZ frequency, so resample needs to be used to convert files to other rates.
      * You can transfer to 16kHZ or 48kHZ.
      */
-#if (CONFIG_ESP_LYRATD_MSC_V2_1_BOARD || CONFIG_ESP_LYRATD_MSC_V2_2_BOARD)
+#if defined(CONFIG_ESP_LYRATD_MSC_V2_1_BOARD) || defined(CONFIG_ESP_LYRATD_MSC_V2_2_BOARD)
     rsp_filter_cfg_t rsp_cfg = DEFAULT_RESAMPLE_FILTER_CONFIG();
     rsp_cfg.src_rate = 44100;
     rsp_cfg.src_ch = 2;
@@ -110,8 +104,10 @@ void app_main(void)
     rsp_cfg.type = AUDIO_CODEC_TYPE_DECODER;
     audio_element_handle_t filter = rsp_filter_init(&rsp_cfg);
     audio_pipeline_register(pipeline, filter, "filter");
-    const char* link_tags2[] = {"mp3", "filter", "i2s"};
-    audio_pipeline_link(pipeline, link_tags2, 3);
+    audio_pipeline_link(pipeline, (const char *[]) {"mp3", "filter", "i2s"}, 3);
+#else
+    audio_pipeline_link(pipeline, (const char *[]) {"mp3", "i2s"}, 2);
+
 #endif
     ESP_LOGI(TAG, "[ 3 ] Set up  event listener");
     audio_event_iface_cfg_t evt_cfg = AUDIO_EVENT_IFACE_DEFAULT_CFG();
@@ -141,16 +137,18 @@ void app_main(void)
 
             audio_element_setinfo(i2s_stream_writer, &music_info);
 
-            /* Es8388 and es8374 use this function to set I2S and codec to the same frequency as the music file, and zl38063
+            /* Es8388 and es8374 and es8311 use this function to set I2S and codec to the same frequency as the music file, and zl38063
              * does not need this step because the data has been resampled.*/
-#if (CONFIG_ESP_LYRAT_V4_3_BOARD || CONFIG_ESP_LYRAT_V4_2_BOARD)
+#if defined(CONFIG_ESP_LYRATD_MSC_V2_1_BOARD) || defined(CONFIG_ESP_LYRATD_MSC_V2_2_BOARD)
+#else
             i2s_stream_set_clk(i2s_stream_writer, music_info.sample_rates , music_info.bits, music_info.channels);
 #endif
             continue;
         }
         /* Stop when the last pipeline element (i2s_stream_writer in this case) receives stop event */
         if (msg.source_type == AUDIO_ELEMENT_TYPE_ELEMENT && msg.source == (void *) i2s_stream_writer
-            && msg.cmd == AEL_MSG_CMD_REPORT_STATUS && (int) msg.data == AEL_STATUS_STATE_STOPPED) {
+            && msg.cmd == AEL_MSG_CMD_REPORT_STATUS
+            && (((int)msg.data == AEL_STATUS_STATE_STOPPED) || ((int)msg.data == AEL_STATUS_STATE_FINISHED))) {
             break;
         }
     }
@@ -170,7 +168,7 @@ void app_main(void)
     /* Release all resources */
     audio_pipeline_unregister(pipeline, i2s_stream_writer);
     audio_pipeline_unregister(pipeline, mp3_decoder);
-#if (CONFIG_ESP_LYRATD_MSC_V2_1_BOARD || CONFIG_ESP_LYRATD_MSC_V2_2_BOARD)
+#if defined(CONFIG_ESP_LYRATD_MSC_V2_1_BOARD) || defined(CONFIG_ESP_LYRATD_MSC_V2_2_BOARD)
     audio_pipeline_unregister(pipeline, filter);
     audio_element_deinit(filter);
 #endif

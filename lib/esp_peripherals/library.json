@@ -21,6 +21,7 @@
       "-I lib/adc_button",
       "-I lib/blufi",
       "-I lib/button",
+	  "-I lib/gpio_isr",
       "-I lib/IS31FL3216",
       "-I lib/sdcard",
       "-I lib/touch"

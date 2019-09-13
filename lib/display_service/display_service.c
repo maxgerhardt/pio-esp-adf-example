@@ -1,7 +1,7 @@
 /*
  * ESPRESSIF MIT License
  *
- * Copyright (c) 2019 <ESPRESSIF SYSTEMS (SHANGHAI) PTE LTD>
+ * Copyright (c) 2019 <ESPRESSIF SYSTEMS (SHANGHAI) CO., LTD>
  *
  * Permission is hereby granted for use on all ESPRESSIF SYSTEMS products, in which case,
  * it is free of charge, to any person obtaining a copy of this software and associated
@@ -56,9 +56,9 @@ display_service_handle_t display_service_create(display_service_config_t *config
     AUDIO_NULL_CHECK(TAG, config, return NULL);
     display_service_impl_t *disp =  audio_calloc(1, sizeof(display_service_impl_t));
     AUDIO_MEM_CHECK(TAG, disp, return NULL);
+    config->based_cfg.user_data = (void *)disp;
     disp->based = periph_service_create(&config->based_cfg);
     disp->instance = config->instance;
-    periph_service_set_data(disp->based, disp);
 
     return disp;
 }

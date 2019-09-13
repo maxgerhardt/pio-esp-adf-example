@@ -22,7 +22,14 @@
       "-I resample/include",
       "-I wav/include",
       "-L lib",
-      "-lesp_codec"
+      "-lesp_processing",
+      "-lesp-aac",
+      "-lesp-amr",
+      "-lesp-amrwbenc",
+      "-lesp-flac",
+      "-lesp-ogg-container",
+      "-lesp-opus",
+      "-lesp-tremor"
     ],
     "libArchive": false
   }

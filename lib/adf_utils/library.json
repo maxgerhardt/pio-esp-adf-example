@@ -1,0 +1,23 @@
+{
+  "name": "adf_utils",
+  "keywords": "audio, esp-adf",
+  "description": "The adf_utils component of ESP-ADF",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxgerhardt/tobefilled.git"
+  },
+  "version": "1.0",
+  "authors": {
+    "name": "ESPRESSIF SYSTEMS (SHANGHAI) PTE LTD",
+    "url": "https://github.com/espressif/esp-adf"
+  },
+  "licence": "MIT",
+  "frameworks": "espidf",
+  "platforms": "espressif32",
+  "build" : {
+    "flags": [
+      "-I include",
+      "-I cloud_services/include"
+    ]
+  }
+}

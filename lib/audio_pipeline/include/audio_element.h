@@ -95,8 +95,9 @@ typedef enum {
     AEL_STATUS_STATE_RUNNING            = 12,
     AEL_STATUS_STATE_PAUSED             = 13,
     AEL_STATUS_STATE_STOPPED            = 14,
-    AEL_STATUS_MOUNTED                  = 15,
-    AEL_STATUS_UNMOUNTED                = 16,
+    AEL_STATUS_STATE_FINISHED           = 15,
+    AEL_STATUS_MOUNTED                  = 16,
+    AEL_STATUS_UNMOUNTED                = 17,
 } audio_element_status_t;
 
 typedef struct audio_element *audio_element_handle_t;
@@ -159,7 +160,7 @@ typedef struct {
     int                 task_core;        /*!< Element task running in core (0 or 1) */
     int                 out_rb_size;      /*!< Output ringbuffer size */
     void                *data;            /*!< User context */
-    char                *tag;             /*!< Element tag */
+    const char          *tag;             /*!< Element tag */
     bool                enable_multi_io;  /*!< Enable multi input and output ringbuffer */
 } audio_element_cfg_t;
 
@@ -330,7 +331,7 @@ esp_err_t audio_element_stop(audio_element_handle_t el);
 
 /**
  * @brief      After the `audio_element_stop` function is called, the Element task will perform some abort procedures.
- *             This function will be blocked until Element Task has done and exit.
+ *             This function will be blocked (Time is DEFAULT_MAX_WAIT_TIME) until Element Task has done and exit.
  *
  * @param[in]  el    The audio element handle
  *
@@ -339,6 +340,19 @@ esp_err_t audio_element_stop(audio_element_handle_t el);
  *     - ESP_FAIL
  */
 esp_err_t audio_element_wait_for_stop(audio_element_handle_t el);
+
+/**
+ * @brief      After the `audio_element_stop` function is called, the Element task will perform some abort procedures.
+ *             The maximum amount of time should block waiting for Element task has stopped.
+ *
+ * @param[in]  el               The audio element handle
+ * @param[in]  ticks_to_wait    The maximum amount of time to wait for stop
+ *
+ * @return
+ *     - ESP_OK, Success
+ *     - ESP_FAIL, Timeout
+ */
+esp_err_t audio_element_wait_for_stop_ms(audio_element_handle_t el, TickType_t ticks_to_wait);
 
 /**
  * @brief      Request audio Element enter 'PAUSE' state.
@@ -566,6 +580,17 @@ esp_err_t audio_element_set_output_timeout(audio_element_handle_t el, TickType_t
 esp_err_t audio_element_reset_input_ringbuf(audio_element_handle_t el);
 
 /**
+ * @brief      Set element finish state
+ *
+ * @param[in]  el    The audio element handle
+ *
+ * @return
+ *     - ESP_OK
+ *     - ESP_FAIL
+ */
+esp_err_t audio_element_finish_state(audio_element_handle_t el);
+
+/**
  * @brief      Reset outputbuffer.
  *
  * @param[in]  el    The audio element handle
@@ -771,6 +796,28 @@ ringbuf_handle_t audio_element_get_multi_input_ringbuf(audio_element_handle_t el
  *     - Others ringbuf_handle_t
  */
 ringbuf_handle_t audio_element_get_multi_output_ringbuf(audio_element_handle_t el, int index);
+
+/**
+ * @brief      Provides a way to call element's `open`
+ *
+ * @param[in]  el    The audio element handle
+ *
+ * @return
+ *     - ESP_OK
+ *     - ESP_FAIL
+ */
+esp_err_t audio_element_process_init(audio_element_handle_t el);
+
+/**
+ * @brief      Provides a way to call elements's `close`
+ *
+ * @param[in]  el    The audio element handle
+ *
+ * @return
+ *     - ESP_OK
+ *     - ESP_FAIL
+ */
+esp_err_t audio_element_process_deinit(audio_element_handle_t el);
 
 #ifdef __cplusplus
 }

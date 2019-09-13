@@ -17,8 +17,7 @@
   "build" : {
     "flags": [
       "-I include",
-      "-I board/include",
-      "-I board/lyratd_msc_v2_2",
+      "-I driver/include",
       "-I driver/es8374",
       "-I driver/es8388",
       "-I driver/zl38063",

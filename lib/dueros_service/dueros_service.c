@@ -32,7 +32,6 @@
 #include "freertos/event_groups.h"
 
 #include "esp_audio_device_info.h"
-#include "duer_audio_wrapper.h"
 #include "lightduer_ota_notifier.h"
 #include "lightduer_voice.h"
 #include "lightduer_connagent.h"
@@ -105,11 +104,27 @@ static void report_info_task(void *pvParameters)
     }
     vTaskDelete(NULL);
 }
+static void duer_dcs_init(void)
+{
+    static bool is_first_time = true;
+    ESP_LOGI(TAG, "duer_dcs_init");
+    duer_dcs_framework_init();
+    duer_dcs_voice_input_init();
+    duer_dcs_voice_output_init();
+    duer_dcs_speaker_control_init();
+    duer_dcs_audio_player_init();
+
+    if (is_first_time) {
+        is_first_time = false;
+        duer_dcs_sync_state();
+    }
+}
 
 static void duer_event_hook(duer_event_t *event)
 {
     if (!event) {
         ESP_LOGE(TAG, "NULL event!!!");
+        return;
     }
     ESP_LOGE(TAG, "event: %d", event->_event);
     switch (event->_event) {
@@ -136,6 +151,7 @@ static void duer_login(void)
     char *data = audio_calloc_inner(1, sz);
     if (NULL == data) {
         ESP_LOGE(TAG, "audio_malloc failed");
+        return;
     }
     memcpy(data, _duer_profile_start, sz);
     ESP_LOGI(TAG, "duer_start, len:%d\n%s", sz, data);
@@ -145,9 +161,11 @@ static void duer_login(void)
 
 static void dueros_task(void *pvParameters)
 {
+    /** We get a delay here because of a known issue, or there will be a crash*/
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+
     audio_service_handle_t serv_handle = (audio_service_handle_t)pvParameters;
     dueros_service_t *serv = audio_service_get_data(serv_handle);
-    ESP_LOGE(TAG, "Func:%s, Line:%d, Malloc failed", __func__, __LINE__);
     duer_initialize();
     duer_set_event_callback(duer_event_hook);
     duer_init_device_info();
@@ -254,40 +272,43 @@ esp_err_t dueros_start(audio_service_handle_t handle)
 
 esp_err_t dueros_stop(audio_service_handle_t handle)
 {
-    dueros_service_t *serv = audio_service_get_data(handle);;
+    dueros_service_t *serv = audio_service_get_data(handle);
     duer_que_send(serv->duer_que, DUER_CMD_STOP, NULL, 0, 0, 0);
     return ESP_OK;
 }
 
 esp_err_t dueros_connect(audio_service_handle_t handle)
 {
-    dueros_service_t *serv = audio_service_get_data(handle);;
+    dueros_service_t *serv = audio_service_get_data(handle);
     duer_que_send(serv->duer_que, DUER_CMD_LOGIN, NULL, 0, 0, 0);
     return ESP_OK;
 }
 
 esp_err_t dueros_disconnect(audio_service_handle_t handle)
 {
-    dueros_service_t *serv = audio_service_get_data(handle);;
+    dueros_service_t *serv = audio_service_get_data(handle);
     duer_que_send(serv->duer_que, DUER_CMD_QUIT, NULL, 0, 0, 0);
     return ESP_OK;
 }
 
 esp_err_t dueros_destroy(audio_service_handle_t handle)
 {
-    dueros_service_t *serv = audio_service_get_data(handle);;
+    dueros_service_t *serv = audio_service_get_data(handle);
     duer_que_send(serv->duer_que, DUER_CMD_DESTROY, NULL, 0, 0, 0);
     return ESP_OK;
 }
 
 service_state_t dueros_service_state_get()
 {
-    dueros_service_t *serv = audio_service_get_data(duer_serv_handle);;
+    dueros_service_t *serv = audio_service_get_data(duer_serv_handle);
     return serv->duer_state;
 }
 
 audio_service_handle_t dueros_service_create(void)
 {
+    dueros_service_t *serv =  audio_calloc(1, sizeof(dueros_service_t));
+    serv->duer_que = xQueueCreate(3, sizeof(duer_task_msg_t));
+    serv->duer_state = SERVICE_STATE_UNKNOWN;
     audio_service_config_t duer_cfg = {
         .task_stack = DUEROS_TASK_STACK_SIZE,
         .task_prio  = DUEROS_TASK_PRIORITY,
@@ -299,14 +320,9 @@ audio_service_handle_t dueros_service_create(void)
         .service_disconnect = dueros_disconnect,
         .service_destroy = dueros_destroy,
         .service_name = "duer_serv",
-        .user_data = NULL,
+        .user_data = serv,
     };
     audio_service_handle_t duer = audio_service_create(&duer_cfg);
-    dueros_service_t *serv =  audio_calloc(1, sizeof(dueros_service_t));
-
-    serv->duer_que = xQueueCreate(3, sizeof(duer_task_msg_t));
-    serv->duer_state = SERVICE_STATE_UNKNOWN;
-    audio_service_set_data(duer, serv);
     duer_serv_handle = duer;
     return duer;
 }

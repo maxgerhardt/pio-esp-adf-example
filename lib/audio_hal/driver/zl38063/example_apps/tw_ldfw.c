@@ -11,11 +11,6 @@
 *
 ***************************************************************************/
 
-/* We do not want to compile the test firmware.
- * It will compile a main() and we just want our firmware.
- * */
-#if 0
-
 #include "vproc_common.h"
 #include "vprocTwolf_access.h"
 #include "esp_log.h"
@@ -57,6 +52,7 @@ int main (int argc, char** argv)
     status = VprocTwolfHbiInit();
     if (status < 0) {
         perror("tw_spi_access open");
+        fclose(BOOT_FD);
         return -1;
     }
 
@@ -122,4 +118,3 @@ int main (int argc, char** argv)
     return 0;
 }
 
-#endif

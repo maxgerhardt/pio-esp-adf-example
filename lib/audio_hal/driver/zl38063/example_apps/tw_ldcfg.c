@@ -10,11 +10,6 @@
 *
 ***************************************************************************/
 
-/* We do not want to compile the test firmware.
- * It will compile a main() and we just want our firmware.
- * */
-#if 0
-
 #include <stdio.h>
 #include <stdlib.h>  /* malloc, free, rand */
 #include "esp_log.h"
@@ -165,4 +160,3 @@ int main (int argc, char** argv)
 
     return 0;
 }
-#endif

@@ -10,11 +10,6 @@
 *
 ***************************************************************************/
 
-/* We do not want to compile the test firmware.
- * It will compile a main() and we just want our firmware.
- * */
-#if 0
-
 #include <stdio.h>
 #include <stdlib.h>  /* malloc, free, rand */
 
@@ -139,6 +134,7 @@ int main (int argc, char** argv)
     //gTwolf_fd = open(file_name, O_RDWR);
     if (status < 0) {
         perror("tw_spi_access open");
+        fclose(BOOT_FD);
         return -1;
     }
 
@@ -230,4 +226,3 @@ int main (int argc, char** argv)
 }
 
 
-#endif

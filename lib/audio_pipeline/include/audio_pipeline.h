@@ -356,6 +356,17 @@ esp_err_t audio_pipeline_reset_items_state(audio_pipeline_handle_t pipeline);
 esp_err_t audio_pipeline_reset_ringbuffer(audio_pipeline_handle_t pipeline);
 
 /**
+ * @brief      Reset Pipeline linked elements state
+ *
+ * @param[in]  pipeline   The Audio Pipeline Handle
+ *
+ * @return
+ *     - ESP_OK on success
+ *     - ESP_FAIL when any errors
+ */
+esp_err_t audio_pipeline_reset_elements(audio_pipeline_handle_t pipeline);
+
+/**
  * @brief      Break up all the linked elements of specific `pipeline`.
  *             The include and before `kept_ctx_el` working (AEL_STATE_RUNNING or AEL_STATE_PAUSED) elements
  *             and connected ringbuffer will be reserved.
@@ -404,6 +415,18 @@ esp_err_t audio_pipeline_relink(audio_pipeline_handle_t pipeline, const char *li
  *     - ESP_ERR_INVALID_ARG    Invalid parameters.
  */
 esp_err_t audio_pipeline_relink_more(audio_pipeline_handle_t pipeline, audio_element_handle_t element_1, ...);
+
+/**
+ * @brief      Set the pipeline state.
+ *
+ * @param[in]  pipeline     The Audio Pipeline Handle
+ * @param[in]  new_state    The new state will be set
+ *
+ * @return
+ *     - ESP_OK                 All linked elements state are same.
+ *     - ESP_FAIL               Error.
+ */
+esp_err_t audio_pipeline_change_state(audio_pipeline_handle_t pipeline, audio_element_state_t new_state);
 
 
 #ifdef __cplusplus
